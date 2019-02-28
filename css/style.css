@@ -32,7 +32,7 @@ section .heading h2 {
 .red-divider {
     width: 100px;
     height: 2px;
-    background: #dd8822;
+    background: #000;
     margin: 0 auto;
 }
 .white-divider {
@@ -59,14 +59,14 @@ ul, ol {
 }
 .button1:hover {
     background: white;
-    color: #dd8822;
+    color: #000;
     text-decoration: none;
 }
 
 /*NAVBAR*/
 
 .navbar {
-    background-color: #dd8822;
+    background-color: #000;
     font-size: 12px;
     border-bottom: 1px solid #fff;
     letter-spacing: 4px;
@@ -82,7 +82,7 @@ ul, ol {
     padding: 12px 0;
 }
 .nav-pills .nav-link.active,  .nav-pills .nav-link:hover{
-    color: #dd8822 !important;
+    color: #000 !important;
     background-color: #fff !important;
     border-radius: inherit;
 
@@ -96,8 +96,8 @@ ul, ol {
 
 #about {
     padding-top: 100px;
-    /*background: #dd8822;*/
-    background-image: url("../images/acid.jpg");
+    /*background: #000;*/
+    background-image: url("../images/acid4.jpg");
     background-size: 30rem;
 }
 .profile-picture {
@@ -123,14 +123,14 @@ ul, ol {
     background: #ffffff;
 }
 #skills .heading h2 {
-    color: #dd8822;
+    color: #333333;
 }
 #skills .progress {
     height: 30px;
     margin: 30px 20px;
 }
 #skills .progress-bar {
-    background: #dd8822;
+    /*background: #000;*/
 }
 
 
@@ -138,7 +138,9 @@ ul, ol {
 /*experience*/
 
 #experience {
-    background: #dd8822;
+    /*background: #333333;*/
+    background-image: url("../images/acid5.jpg");
+    background-size: 30rem;
 }
 #experience .heading h2 {
     color: white;
@@ -153,7 +155,7 @@ ul, ol {
     position: absolute;
     content: " ";
     width: 5px;
-    background-color: #333;
+    background-color: #000;
     left: 50%;
     margin-left: -2.5px;
 }
@@ -174,7 +176,7 @@ ul, ol {
     display: table;
 }
 .timeline li .timeline-badge {
-    color: #dd8822;
+    color: #000;
     width: 50px;
     line-height: 50px;
     font-size: 20px;
@@ -214,7 +216,7 @@ ul, ol {
     width: 90%;
     float: right;
     margin-right: 40px;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #000;
     border-radius: 7px;
     padding: 20px 25px;
     position: relative;
@@ -264,7 +266,7 @@ ul, ol {
     text-transform: uppercase;
 }
 .timeline-heading h4 {
-    color: #dd8822;
+    color: #000;
 }
 
 
@@ -275,7 +277,7 @@ ul, ol {
     background-color: white;
 }
 #education .heading h2 {
-    color: #dd8822;
+    color: #333333;
 }
 .education-block {
     width: 80%;
@@ -293,11 +295,11 @@ ul, ol {
     margin-bottom: 15px;
 }
 .education-block i {
-    font-size: 40px;    color: #dd8822;
+    font-size: 40px;    color: #000;
 
 }
 .education-block h3 {
-    color: #dd8822;
+    color: #333333;
 }
 .education-block h4 {
     margin-bottom: 20px;
@@ -312,7 +314,8 @@ ul, ol {
 /*portfolio*/
 
 #portfolio {
-    background-color: #dd8822;
+    background-image: url("../images/acid.jpg");
+    background-size: 30rem;
 }
 .row-portfolio {
     padding: 15px 0;
@@ -346,11 +349,11 @@ ul, ol {
     background-color: white;
 }
 #recommandations .heading h2 {
-    color: #dd8822;
+    color: #333333;
 }
 .fas.fa-chevron-left, .fas.fa-chevron-right {
     background-image: none;
-    color: #dd8822;
+    color: #333333;
 }
 .carousel-indicators {
     bottom: 0;
@@ -359,16 +362,16 @@ ul, ol {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    border: 1px solid #dd8822;
+    border: 1px solid #333333;
 }
 .carousel-indicators li.active {
-    background-color: #dd8822;
+    background-color: #333333;
 }
 #myCarousel .carousel-item {
     padding: 40px 30px;
 }
 #myCarousel .carousel-item h3 {
-    color: #dd8822;
+    color: #333333;
     font-style: italic;
 }
 
@@ -376,13 +379,14 @@ ul, ol {
 
 
 footer {
-    background-color: #333333;
-    padding: 20px 0 40px;
+    background-color: #000;
+    padding: 15px 0 35px;
+    border-top: 1px solid #fff;
 }
 footer .fas{
     font-size:  25px;
     margin: 20px;
-    color: #dd8822;
+    color: #333333;
     height: 30px;
 }
 footer .fas:hover{
@@ -397,7 +401,8 @@ footer h5{
 /*contact*/
 
 #contact {
-    background-color: #dd8822;
+    background-image: url("../images/acid3.jpg");
+    background-size: 30rem;
 }
 #contact .heading h2 {
     color: #ffffff;
