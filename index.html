@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -379,6 +380,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-10">
+
                 <form id="contact-form" method="post" action="" role="form">
                     <div class="row">
                         <div class="col-md-6">
@@ -417,6 +419,11 @@
 
                         <div class="col-md-12">
                             <p><strong>* Ces informations sont requises</strong></p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="g-recaptcha" data-sitekey="6Lc6TJUUAAAAAFs4y5MYlJezrHdyS02JOQMCsCSF"></div>
+                            <p class="comments"></p>
                         </div>
 
                         <div class="col-md-12">

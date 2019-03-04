@@ -30,6 +30,7 @@ $(function() {
 
         $('.comments').empty();
         var postdata = $('#contact-form').serialize();
+        console.log(postdata);
 
 
         $.ajax({
@@ -48,6 +49,8 @@ $(function() {
                     $("#email + .comments").html(result.emailError);
                     $("#phone + .comments").html(result.phoneError);
                     $("#message + .comments").html(result.messageError);
+                    $(".g-recaptcha + .comments").html(result.captchaError);
+                    grecaptcha.reset();
 
                 }
 

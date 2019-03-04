@@ -1,9 +1,13 @@
 <?php
 
+require 'recaptchalib.php';
+//$siteKey = '6Lc6TJUUAAAAAFs4y5MYlJezrHdyS02JOQMCsCSF'; // votre clé publique
+$secret = '6Lc6TJUUAAAAABA6OMvpmBb7Z6BCohyCtqE1wHqv'; // votre clé privée
+
+
 $array = ["firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "",
     "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "",
-    "isSuccess" => false];
-
+    "captchaError" => "", "isSuccess" => false];
 
 $emailTo = "felix.tuffreaud@laposte.net";
 
@@ -26,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $array["nameError"] = "Ton nom aussi !";
         $array["isSuccess"] = false;
     } else {
+
         $emailText .= "Name: {$array["name"]}\n";
     }
     if (!isEmail($array["email"])) {
@@ -48,6 +53,25 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $emailText .= "Message: {$array["message"]}\n";
     }
 
+    //captcha
+
+    $reCaptcha = new ReCaptcha($secret);
+    if(isset($_POST["g-recaptcha-response"])) {
+        $resp = $reCaptcha->verifyResponse(
+            $_SERVER["REMOTE_ADDR"],
+            $_POST["g-recaptcha-response"]
+        );
+        if ($resp != null && $resp->success) {
+            //echo "CAPTCHA OK";
+            //ne rien faire
+        } else {
+            // ajouter le message d'erreur du captcha
+            $array["captchaError"] = "merci de valider le captcha";
+            $array["isSuccess"] = false;
+        }
+    }
+
+    // en cas de success envoyer le mail
     if ($array["isSuccess"]) {
         //envoie de l'email
         $headers = "From: {$array["firstname"]} {$array["name"]} <{$array["email"]}>\r\nReply-To: {$array["email"]}";
