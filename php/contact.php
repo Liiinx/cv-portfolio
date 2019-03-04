@@ -2,7 +2,7 @@
 
 require 'recaptchalib.php';
 //$siteKey = '6Lc6TJUUAAAAAFs4y5MYlJezrHdyS02JOQMCsCSF'; // votre clé publique
-$secret = '6Lc6TJUUAAAAABA6OMvpmBb7Z6BCohyCtqE1wHqv'; // votre clé privée
+$secret = 'votre clé privée'; // votre clé privée
 
 
 $array = ["firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "",
