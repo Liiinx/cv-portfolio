@@ -43,6 +43,10 @@ $(function() {
                 if(result.isSuccess){
                     $("#contact-form").append("<p class='thank-you'>Votre message a bien été envoyé. Merci</p>");
                     $("#contact-form")[0].reset();
+                    $(".thank-you").delay(3000).slideUp(1000);
+                    // setTimeout(function() {
+                    //     $('.thank-you').remove();
+                    // }, 3000);
                 } else {
                     $("#firstname + .comments").html(result.firstnameError);
                     $("#name + .comments").html(result.nameError);
