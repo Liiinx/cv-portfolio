@@ -55,7 +55,7 @@ ul, ol {
     border-radius: 3px;
     display: inline-block;
     transition: all 0.3s ease-in 0s;
-    background: transparent;
+    background: rgba(0,0,0, 0.4);
 }
 .button1:hover {
     background: white;
@@ -100,7 +100,7 @@ a:hover {
 #about {
     padding-top: 100px;
     /*background: #000;*/
-    background-image: url("../images/acid4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/acid4.jpg");
     background-size: 30rem;
 }
 .profile-picture {
@@ -116,8 +116,10 @@ a:hover {
     color: #ffffff;
     text-transform: uppercase;
 }
-#about .heading h3 {
+#about .heading h2 {
     color: #fff;
+    text-transform: inherit;
+    font-weight: 400;
 }
 
 /*SKILLS*/
@@ -142,7 +144,7 @@ a:hover {
 
 #experience {
     /*background: #333333;*/
-    background-image: url("../images/acid5.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/acid5.jpg");
     background-size: 30rem;
 }
 #experience .heading h2 {
@@ -227,8 +229,8 @@ a:hover {
     background-color: white;
 }
 /*.timeline-panel-container-inverted .timeline-panel {*/
-    /*float: left;*/
-    /*margin-left: 40px;*/
+/*float: left;*/
+/*margin-left: 40px;*/
 /*}*/
 @media screen and (min-width: 768px) {
     .timeline-panel-container-inverted .timeline-panel {
@@ -249,10 +251,10 @@ a:hover {
     content: " ";
 }
 /*.timeline-panel-container-inverted .timeline-panel:after {*/
-    /*border-left-width: 0;*/
-    /*border-right-width: 14px;*/
-    /*left: -14px;*/
-    /*right: auto;*/
+/*border-left-width: 0;*/
+/*border-right-width: 14px;*/
+/*left: -14px;*/
+/*right: auto;*/
 /*}*/
 @media screen and (min-width: 768px) {
     .timeline-panel-container-inverted .timeline-panel:after {
@@ -317,7 +319,7 @@ a:hover {
 /*portfolio*/
 
 #portfolio {
-    background-image: url("../images/acid5.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/acid5.jpg");
     background-size: 30rem;
 }
 .row-portfolio {
@@ -359,7 +361,7 @@ a:hover {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #8A2BE2;
+    background-color: #6c22b1;
     padding: 0 15px;
 }
 
@@ -430,7 +432,7 @@ footer .chevron{
 footer .chevron:hover{
     font-size:  27px;
 }
-footer h5{
+footer .copyright{
     color: #fff;
     font-weight: normal;
 }
@@ -439,13 +441,13 @@ footer h5{
     padding: 5px;
 }
 .link:hover {
-    color: #8A2BE2;
+    color: #7a26c7;
 }
 
 /*contact*/
 
 #contact {
-    background-image: url("../images/acid4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/acid4.jpg");
     background-size: 30rem;
 }
 #contact .heading h2 {
