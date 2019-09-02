@@ -30,8 +30,7 @@ $(function() {
 
         $('.comments').empty();
         var postdata = $('#contact-form').serialize();
-        console.log(postdata);
-
+        // console.log(postdata);
 
         $.ajax({
             type: 'POST',

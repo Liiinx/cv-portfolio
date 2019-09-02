@@ -95,5 +95,3 @@ function verifyInput($var) {
     $var = htmlspecialchars($var);
     return $var;
 }
-
-?>
